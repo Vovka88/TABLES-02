@@ -1,0 +1,65 @@
+/* .nav_box - Селектор (Селектор - назва классу) */
+/* #nav_box - ID */
+/* Помітка js перед назвою селектора зазвичай показує, що він */
+/* презначен для програмування */
+* {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Mulish', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #292828;
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 595px;
+    height: 202px;
+    background-image: url(../images/man.png);
+    margin: 0 auto;
+}
+
+main{
+    margin: 0 auto;
+    width: 595px;
+    height: 640px;
+    background: linear-gradient(180deg, #5A5A5A 0%, #191414 26.21%);
+}
+
+.name_box {
+    margin-left: 34px;
+    padding-top: 124px;
+}
+
+.btn {
+    margin-left: 35px;    
+    padding-top: 20px;
+}
+
+.btn_text {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 20px;
+    background: #1DB954;
+}
+
+.linkedin {
+    padding: 7px 20px;
+}
+
+.e-mail {
+    margin-left: 12px;
+    padding: 7px 25px;
+}
+
+.call {
+    margin-left: 12px;
+    padding: 7px 29px;
+}
