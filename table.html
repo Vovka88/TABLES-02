@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Таблиці</title>
+</head>
+<body>
+    <main>
+        <nav><a href="./index.html">Навігація</a></nav>
+
+        <!-- Глобальний тег таблиці <table></table> -->
+        <!-- рядок таблиці <tr></tr> -->
+        <!-- стовпець таблиці <td></td> -->
+        <!-- заголовок таблиці <th></th> -->
+        <!-- Назва таблиці <caption></caption> -->
+        <table>
+            <caption>Розклад руху потягу</caption>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Маршрут</th>
+                    <th>Тривалість</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>433</td>
+                    <td>Вінниця - Миколаїв</td>
+                    <td>8 год</td>
+                </tr>
+                <tr>
+                    <td>7101</td>
+                    <td>Миколаїв - Харків</td>
+                    <td>9 год</td>
+                </tr>
+                <tr>
+                    <td>1223</td>
+                    <td>Харків - Львів</td>
+                    <td>16 год</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <table>
+            <caption>Групована таблиця</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2">Service</th>
+                    <th colspan="3">Statistic</th>
+                </tr>
+                <tr>
+                    <th>Users</th>
+                    <th>Visits</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+
+            <tbody>
+               <tr>
+                    <th>Google</th>
+                    <th>123456</th>
+                    <th>470000</th>
+                    <th>1000TB</th>
+                </tr> 
+               <tr>
+                    <th>Amazon</th>
+                    <th>12345</th>
+                    <th>50000</th>
+                    <th>60TB</th>
+                </tr> 
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
