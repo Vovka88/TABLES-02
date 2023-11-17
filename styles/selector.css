@@ -2,16 +2,32 @@
 /* #nav_box - ID */
 /* Помітка js перед назвою селектора зазвичай показує, що він */
 /* презначен для програмування */
+
+/* Селектор:hover - спрацьовує при наведені */
+/* Селектор:focus - спрацьовує при кліку */
+/* Селектор:active - спрацьовує коли елемент активен */
+/* Селектор:visited - спрацьовує якщо посилання було відвідане */
+
+/* :root - місце для об'явлення змінною */
+/* -- - призначення змінної */
+
+:root{
+    --main-background-color: #292828;
+    --font-color: white;
+    --secondary-font-color: #AAABAA;
+}
+
 * {
     padding: 0px;
     margin: 0px;
-    color: white;
+    color: var(--font-color);
     font-family: 'Mulish', sans-serif;
+    font-style: normal;
     list-style: none;
 }
 
 body {
-    background-color: #292828;
+    background-color: var(--main-background-color);
     width: 100vw;
     height: 100vh;
 }
@@ -36,30 +52,111 @@ main{
 }
 
 .btn {
-    margin-left: 35px;    
+    margin: 0px 35px;    
     padding-top: 20px;
 }
 
 .btn_text {
     text-align: center;
     font-size: 10px;
-    font-style: normal;
     font-weight: 500;
     text-transform: uppercase;
     border-radius: 20px;
+    border: 0.5px solid #D9D9D9;
+    background: #444;
+    margin-right: 12px;
+}
+
+.btn_text:hover {
     background: #1DB954;
 }
+/* .btn_text:focus {
+    background: #1DB954;
+} */
+/* .btn_text:active {
+    background: #1DB954;
+} */
+/* .btn_text:visited {
+    background: #1DB954;
+} */
 
 .linkedin {
     padding: 7px 20px;
 }
 
-.e-mail {
-    margin-left: 12px;
+.e-mail {  
     padding: 7px 25px;
 }
 
 .call {
-    margin-left: 12px;
     padding: 7px 29px;
+}
+
+/* Загальний блок контенту */
+
+.content_table {
+    margin-right: 55px;
+    width: calc(100% / 2);
+}
+
+.content_table:last-child {
+    margin-right: 0;
+}
+
+.info_container {
+    display: flex;
+}
+
+.content_box {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+.content_box img {
+    width: 34px;
+    height: 34px;
+    margin-right: 12px;
+}
+
+.head_text {
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+    border-bottom: 1px solid #9e9f9e79;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.text_box h3 {
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 12px;
+}
+
+.company_name {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.period {
+    color: var(--secondary-font-color);
+    font-size: 7.5px;
+    font-weight: 400;
+    line-height: 12px;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-size: 7.5px;
+    font-weight: 400;
+    line-height: 10px;
+    margin-bottom: 12px;
+}
+
+.description span {
+    color: var(--font-color);
+    font-size: 7.5px;
+    font-weight: 900;
+    line-height: 10px;
 }
